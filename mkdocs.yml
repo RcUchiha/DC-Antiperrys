@@ -1,0 +1,70 @@
+site_name: DC Antiperrys
+site_author: CiferrC
+repo_name: CiferrC/DC-Antiperrys
+repo_url: https://github.com/RcUchiha/DC-Antiperrys
+
+nav:
+  - Introducción: index.md
+  - Terminología: terminologia.md 
+  - Fansubeo:
+      - Traducción: traduccion/traduccion.md
+      - Corrección: correccion/correccion.md
+      - Sincronización: sincronizacion/sincronizacion.md
+      - Edición: edicion/edicion.md
+      - Karaokes:
+          - Templaters de karaoke: karaokes/templaters-fx.md
+          - Templater de The0x: karaokes/templater-0x.md
+          - Colorlib de The0x: karaokes/lib-color-0x.md
+          - Función AutoTags: karaokes/funcion-autotags.md
+      - Encode: encode/encode.md
+      - QC: qc/qc.md
+  - Programación:
+      - LUA:
+          - Más sobre Lua: programacion/mas-sobre-lua.md
+          - ASSFoundation: programacion/assf.md
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs  # Convierte las secciones principales en pestañas en la parte superior.
+    - navigation.tabs.sticky  # Mantiene las pestañas fijas al hacer scroll.
+    - navigation.sections  # Muestra subsecciones dentro de cada sección en la barra lateral.
+    - navigation.top  # Agrega un botón flotante para volver al inicio rápidamente.
+    - search.suggest  # Muestra sugerencias mientras el usuario escribe en la barra de búsqueda.
+    - search.highlight  # Resalta las palabras clave en los resultados de búsqueda.
+    - content.tabs.link  # Sincroniza pestañas de contenido entre páginas (solo útil si usas pymdownx.tabbed).
+    - content.code.annotation  # Permite agregar anotaciones en bloques de código.
+    - content.code.copy  # Agrega un botón para copiar código fácilmente.
+  palette:
+    # Modo oscuro por defecto con opción de cambiar
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+markdown_extensions:
+  - attr_list  # Permite clases CSS personalizadas en Markdown
+  - admonition  # Notas, advertencias, consejos
+  - footnotes  # Soporte para notas al pie
+  - tables  # Soporte para tablas en Markdown
+  - pymdownx.details  # Secciones colapsables
+  - pymdownx.tabbed:  # Pestañas para contenido en varios lenguajes
+      alternate_style: true
+  - pymdownx.highlight:  # Resaltado de código
+      pygments_style: "one-dark"
+      noclasses: true
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite  # Resaltado de código en línea
+  - pymdownx.snippets  # Permite incluir archivos externos en Markdown
+  - pymdownx.superfences  # Soporte para bloques de código anidados y personalizados
+
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY  # Reemplázalo con tu clave real si usas Google Analytics
