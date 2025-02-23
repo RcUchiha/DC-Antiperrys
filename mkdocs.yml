@@ -64,8 +64,7 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.highlight:  # Resaltado de código
       anchor_linenums: true
-  - pymdownx.inlinehilite  # Resaltado de código en línea
-  - pymdownx.snippets  # Permite incluir archivos externos en Markdown
+      use_pygments: true
   - pymdownx.superfences 
 
 extra:
