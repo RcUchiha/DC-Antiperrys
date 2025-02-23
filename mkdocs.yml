@@ -61,7 +61,7 @@ markdown_extensions:
   - pymdownx.tabbed:  # Pestañas para contenido en varios lenguajes
       alternate_style: true
   - pymdownx.highlight:  # Resaltado de código
-      pygments_style: "one-dark"
+      pygments_style: "monokai"
       noclasses: true
       linenums: true
       anchor_linenums: true
