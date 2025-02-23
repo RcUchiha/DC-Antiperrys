@@ -40,6 +40,7 @@ theme:
     - content.code.copy  # Agrega un botón para copiar código fácilmente.
     - content.code.select
   palette:
+    primary: indigo
     # Modo oscuro por defecto con opción de cambiar
     - scheme: slate
       toggle:
