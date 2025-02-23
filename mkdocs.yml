@@ -66,6 +66,7 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite  # Resaltado de código en línea
   - pymdownx.snippets  # Permite incluir archivos externos en Markdown
+  - pymdownx.superfences 
 
 extra:
   analytics:
