@@ -61,9 +61,6 @@ markdown_extensions:
   - pymdownx.tabbed:  # Pestañas para contenido en varios lenguajes
       alternate_style: true
   - pymdownx.highlight:  # Resaltado de código
-      pygments_style: "monokai"
-      noclasses: true
-      linenums: true
       anchor_linenums: true
   - pymdownx.inlinehilite  # Resaltado de código en línea
   - pymdownx.snippets  # Permite incluir archivos externos en Markdown
