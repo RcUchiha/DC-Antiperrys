@@ -32,7 +32,8 @@ theme:
     - navigation.tabs.sticky  # Mantiene las pestañas fijas al hacer scroll.
     - navigation.sections  # Muestra subsecciones dentro de cada sección en la barra lateral.
     - navigation.top  # Agrega un botón flotante para volver al inicio rápidamente.
-    - navigation.expand
+    - navigation.expand  # Expande todas las subsecciones plegables de manera predeterminada de la barra lateral izquierda
+    # - toc.integrate  # Quita la barra lateral de derecha de temas
     - search.suggest  # Muestra sugerencias mientras el usuario escribe en la barra de búsqueda.
     - search.highlight  # Resalta las palabras clave en los resultados de búsqueda.
     - content.tabs.link  # Sincroniza pestañas de contenido entre páginas (solo útil si usas pymdownx.tabbed).
@@ -40,7 +41,6 @@ theme:
     - content.code.copy  # Agrega un botón para copiar código fácilmente.
     - content.code.select
   palette:
-    primary: indigo
     # Modo oscuro por defecto con opción de cambiar
     - scheme: slate
       toggle:
@@ -55,6 +55,7 @@ plugins:
 - search
 
 markdown_extensions:
+  - attr_list
   - admonition  # Notas, advertencias, consejos
   - footnotes  # Soporte para notas al pie
   - tables  # Soporte para tablas en Markdown
