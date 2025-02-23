@@ -1,8 +1,8 @@
 site_name: DC Antiperrys
 site_author: CiferrC
 repo_name: CiferrC/DC-Antiperrys
-site_url: https://rcuchiha.github.io/DC-Antiperrys/
 repo_url: https://github.com/RcUchiha/DC-Antiperrys
+site_url: https://rcuchiha.github.io/DC-Antiperrys/
 
 nav:
   - Introducción: index.md
@@ -32,11 +32,13 @@ theme:
     - navigation.tabs.sticky  # Mantiene las pestañas fijas al hacer scroll.
     - navigation.sections  # Muestra subsecciones dentro de cada sección en la barra lateral.
     - navigation.top  # Agrega un botón flotante para volver al inicio rápidamente.
+    - navigation.expand
     - search.suggest  # Muestra sugerencias mientras el usuario escribe en la barra de búsqueda.
     - search.highlight  # Resalta las palabras clave en los resultados de búsqueda.
     - content.tabs.link  # Sincroniza pestañas de contenido entre páginas (solo útil si usas pymdownx.tabbed).
     - content.code.annotation  # Permite agregar anotaciones en bloques de código.
     - content.code.copy  # Agrega un botón para copiar código fácilmente.
+    - content.code.select
   palette:
     # Modo oscuro por defecto con opción de cambiar
     - scheme: slate
@@ -47,9 +49,11 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
+        
+plugins:
+- search
 
 markdown_extensions:
-  - attr_list  # Permite clases CSS personalizadas en Markdown
   - admonition  # Notas, advertencias, consejos
   - footnotes  # Soporte para notas al pie
   - tables  # Soporte para tablas en Markdown
@@ -63,7 +67,6 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite  # Resaltado de código en línea
   - pymdownx.snippets  # Permite incluir archivos externos en Markdown
-  - pymdownx.superfences  # Soporte para bloques de código anidados y personalizados
 
 extra:
   analytics:
